@@ -3,5 +3,5 @@
 Project for Web Development (CSC4002)
 
 # Contributors
-- Sanjana Rai - @Sanjana-R
+- Sanjana Rai - [@Sanjana-R](https://github.com/sanjana-r)
 - Naveena Koneru 
