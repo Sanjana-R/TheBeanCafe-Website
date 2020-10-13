@@ -5,91 +5,169 @@
         <title>Bookings</title>
         <link href="bookings.css" rel="stylesheet">
     </head>
-    <body bgcolor="#F8E3E5">
-        <center><h1 style="color:white;">BOOKINGS</h1></center>
-        <div class="row">
-        <div class="column">
-        <form style="background-color:powderblue">
-            <center> <h2>Reserve a table!</h2>
-            <p>We would be glad to reserve a table for you and your guests at our restaurant.</p> </center>
-             <label for='name'><span>Name:</span></label>
-             <input type='text' name='name' size='30'>
-                <br><br>
-             <label for='phone'><span>Phone:</span></label>
-             <input type='text' size='30' name='phno' maxlength='10'>
-                <br><br>
-             <label for='email'><span>Email:</span></label>
-             <input type='text' size='30' name='email'>
-                <br><br>
-             <label for='date'><span>Date:</span></label>
-             <input type='text' name='date' size='10'>
-                <br><br>
-             <label for='time'><span>Time:</span></label>
-             <input type='text' name='time' size='10'>
-                <br><br>
-             <label for='attendees'><span>Attendees:</span></label>
-             <select name= 'attendees'>
-                <option value='1'>1</option>
-                <option value='2'>2</option>
-                <option value='3'>3</option> 
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-                <option value='6'>6</option> 
-                <option value='7'>7</option> 
-                <option value='8'>8</option>
-                <option value='9'>9</option>
-                <option value='10'>10</option>
-             </select>
-                <br><br>
-             <label for='comments'><span>Requests / Comments:</span></label>
-             <textarea cols='30' rows='10' name='desc'></textarea>
-                <br><br>
-            <button type='submit' name='submit'>Submit</button>
+    <body>
+            
+    <div class='container'>
+      
+      <table id='tabel'>
+         <tr>
+            <td colspan='4'>
+               <h1>REQUEST BOOKING</h1><br>
+            </td>
+         </tr>
+         <!-- First -->
+         <tr>
+            <td>
+               <label for="fname" class='field-label'>
+                  First Name
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="fname" class="input-field" name="fname">
+               </div>
+            </td>
+            <td>
+               <label for="lname" class='field-label'>
+                  Last Name
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="lname" class="input-field" name="lname">
+               </div>
+            </td>
+            <td colspan='2'>
+               <label for="phno" class='field-label'>
+                  Phone Number
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="phno" class="input-field" name="phno">
+               </div>
+            </td>
+         </tr>
 
-        </form>
-        </div>
+         <!-- 2 -->
+         <tr>
+            <td colspan='4'>
+               <label for="address" class='field-label'>
+                  Delivery Address
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="address" id="address" class="input-field" name="address">
+               </div>
+            </td>            
+         </tr>
 
-        <div class="column">
-            <form style="background-color:pink">
-                <center> <h2>Host a party!</h2>
-                <p>We would be glad to have you host a party with us.</p> </center>
-                 <label for='name'><span>Name:</span></label>
-                 <input type='text' name='name' size='30'>
-                    <br><br>
-                 <label for='phone'><span>Phone:</span></label>
-                 <input type='text' size='30' name='phno' maxlength='10'>
-                    <br><br>
-                 <label for='email'><span>Email:</span></label>
-                 <input type='text' size='30' name='email'>
-                    <br><br>
-                 <label for='date'><span>Date:</span></label>
-                 <input type='text' name='date' size='10'>
-                    <br><br>
-                 <label for='time'><span>Time:</span></label>
-                 <input type='text' name='time' size='10'>
-                    <br><br>
-                 <label for='attendees'><span>Attendees:</span></label>
-                 <select name= 'attendees'>
-                    <option value='1'>1</option>
-                    <option value='2'>2</option>
-                    <option value='3'>3</option> 
-                    <option value='4'>4</option>
-                    <option value='5'>5</option>
-                    <option value='6'>6</option> 
-                    <option value='7'>7</option> 
-                    <option value='8'>8</option>
-                    <option value='9'>9</option>
-                    <option value='10'>10</option>
-                 </select>
-                    <br><br>
-                 <label for='comments'><span>Requests / Comments:</span></label>
-                 <textarea cols='30' rows='10' name='desc'></textarea>
-                    <br><br>
-                <button type='submit' name='submit'>Submit</button>
-    
-            </form>
-            </div>
-        </div>
-    
+         <!-- 3 -->
+         <tr>
+            <td colspan='2'>
+               <label for="email" class='field-label'>
+                  Email Address
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="email" class="input-field" name="email">
+               </div>
+            </td>
+            <td colspan='2'>
+               <label for="event" class='field-label'>
+                  Type of Event
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <select name= 'event'>
+                     <option value='1'>Corporate Function</option>
+                     <option value='2'>Galas and Parties</option>
+                  </select>                  
+               </div>
+            </td>          
+         </tr>
+
+         <!-- 4 -->
+         <tr>            
+            <td colspan='2'>
+               <label for="cname" class='field-label'>
+                  Company Name                  
+               </label>
+               <div class='input-container'>
+                  <input type="text" id="cname" class="input-field" name="cname">
+               </div>
+            </td>
+            <td>
+               <label for="doe" class='field-label'>
+                  Date of Event
+                  <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" class="input-field" placeholder="Pick a Date" onfocus="(this.type='date')" name="doe">
+               </div>
+            </td>
+            <td>
+               <label for="nop" class='field-label'>
+                  Number of People
+               <span class="field-required">*</span>
+               </label>
+               <div class='input-container'>
+                  <input type="text" class="input-field" id="nop" name="nop">
+               </div>
+            </td>
+         </tr>   
+
+         <!-- 5 -->
+         <tr>    
+            <td colspan='4'>  
+            <label for="eco" class='field-label'>
+               <p>Do you require Eco-Friendly serving ware (plates, cups, cutlery etc.) &#x20B9;20/person
+            <span class="field-required">*</span></p>
+            </label>
+            <div class='input-container'>
+               <input type="radio" id="yes" name="yn" value="yes">
+               <label for="yes">Yes</label>
+               <br>
+               <input type="radio" id="no" name="yn" value="no">
+               <label for="no">No</label>
+            </div>  
+            </td>   
+         <tr>
+
+         <!-- 6 -->
+         <tr>
+            <td colspan='4'>      
+            <label for="pay" class='field-label'>
+               <p>Payment Method
+            <span class="field-required">*</span></p>
+            </label>
+            <div class='input-container'>
+               <input type="radio" id="cc" name="pay" value="cc">
+               <label for="cc">Credit Card</label>
+               <br>
+               <input type="radio" id="inv" name="pay" value="inv">
+               <label for="inv">Invoice</label><br>
+            </div>  
+            </td>   
+         <tr>
+
+         <tr class='message-row'>
+            <td colspan='4'>
+               <label for="msg" class='field-label'>
+                  Message                  
+               </label>
+               <div class='message-input'>
+                  <textarea cols='128' rows='10' name='msg'></textarea>
+               </div>
+            </td>
+         </tr>
+         <tr>
+          <td>
+             <button id='submitButton' type="submit">Submit</button>
+          </td>
+         </tr>
+      </table>
+
+    </div>
+
     </body>
 </html>
+
+

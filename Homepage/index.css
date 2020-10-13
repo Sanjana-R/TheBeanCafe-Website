@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {    
+  padding: 0px;
+  background-color: #012639;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #9B7A69;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #E6BE8A;
+}
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #012639;
+}
+  
+.respimg {
+  width: 100%;
+  height: auto;
+}
+  
+.homeimgs {
+  position: relative;
+  background-repeat: no-repeat;  
+}
+
+#hero {
+  color: white;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 7%;
+}
+ 
+.centered {
+  opacity: 0.8;
+  position: relative;
+  top: 50%;
+  padding-left: 12em;
+  padding-right: 12em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 20%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.menubutton {
+  background-color: #9B7A69;
+  border: none;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menubutton:hover {
+  background-color: #012639;
+}
