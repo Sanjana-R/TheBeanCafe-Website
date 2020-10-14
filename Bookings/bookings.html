@@ -5,14 +5,20 @@
         <title>Bookings</title>
         <link href="bookings.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload='document.tabel.email.focus()'>
             
     <div class='container'>
-      
-      <table id='tabel'>
+      <form name='mainform'action="#">
+      <table id='tabel' >
          <tr>
             <td colspan='4'>
-               <h1>REQUEST BOOKING</h1><br>
+               <h1 class='logo'><a href="index.html">The Bean Cafe</a></h1>
+            </td>
+         </tr>
+         <br>
+         <tr>
+            <td colspan='4'>
+               <h1>REQUEST CATERING</h1><br>
             </td>
          </tr>
          <!-- First -->
@@ -23,7 +29,7 @@
                <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" id="fname" class="input-field" name="fname">
+                  <input type="text" id="fname" class="input-field" name="fname" required>
                </div>
             </td>
             <td>
@@ -32,7 +38,7 @@
                   <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" id="lname" class="input-field" name="lname">
+                  <input type="text" id="lname" class="input-field" name="lname" required>
                </div>
             </td>
             <td colspan='2'>
@@ -41,7 +47,7 @@
                   <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" id="phno" class="input-field" name="phno">
+                  <input type="text" id="phno" class="input-field" name="phno" required>
                </div>
             </td>
          </tr>
@@ -54,7 +60,7 @@
                   <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="address" id="address" class="input-field" name="address">
+                  <input type="address" id="address" class="input-field" name="address" required>
                </div>
             </td>            
          </tr>
@@ -67,7 +73,7 @@
                <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" id="email" class="input-field" name="email">
+                  <input type="email" id="email" class="input-field" name="email" required >
                </div>
             </td>
             <td colspan='2'>
@@ -76,7 +82,7 @@
                   <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <select id='event-option' name= 'event'>
+                  <select id='event-option' name= 'event' required>
                      <option value='1'>Corporate Function</option>
                      <option value='2'>Galas and Parties</option>
                   </select>                  
@@ -100,7 +106,7 @@
                   <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" class="input-field" placeholder="Pick a Date" onfocus="(this.type='date')" name="doe">
+                  <input type="text" class="input-field" placeholder="Pick a Date" onfocus="(this.type='date')" name="doe" required>                  
                </div>
             </td>
             <td>
@@ -109,7 +115,7 @@
                <span class="field-required">*</span>
                </label>
                <div class='input-container'>
-                  <input type="text" class="input-field" id="nop" name="nop">
+                  <input type="text" class="input-field" id="nop" name="nop" required>
                </div>
             </td>
          </tr>   
@@ -160,12 +166,13 @@
          </tr>
          <tr>
           <td colspan='4'><center>
-             <button id='submitButton' type="submit">Submit</button></center>
+             <button id='submitButton' type="submit" onclick="ValidateEmail(document.mainform.email)">Submit</button></center>
           </td>
          </tr>
       </table>
-
+   </form>
     </div>
+    <script src= "bookings.js"></script>
 
     </body>
 </html>

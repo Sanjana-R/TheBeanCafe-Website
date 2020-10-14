@@ -12,6 +12,19 @@ h1 {
     font-weight: lighter;
     text-align: center;
   }
+
+  a {
+    text-decoration: none;
+    color: #9B7A69;
+  }
+
+.logo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  color: #9B7A69;
+  font-size: large;
+  text-transform: uppercase;
+}
  
 .input-field {
     width: 100%;

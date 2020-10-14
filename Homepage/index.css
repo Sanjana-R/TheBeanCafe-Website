@@ -14,6 +14,15 @@ li {
   float: right;
 }
 
+.logo-class {
+  float: left;
+  padding: 20px 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  color: #9B7A69;
+  font-size: large;
+}
+
 li a {
   display: block;
   color: #9B7A69;
@@ -55,6 +64,7 @@ ul {
 }
  
 .centered {
+  color: #FFFFFF;
   opacity: 0.8;
   position: relative;
   top: 50%;
@@ -82,4 +92,8 @@ ul {
 
 .menubutton:hover {
   background-color: #012639;
+}
+
+h1 {
+  font-weight: lighter;
 }
