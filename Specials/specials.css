@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #012639;
+    color: #9B7A69;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.fset-class {
+    border-color: #9B7A69;
+    padding: 20px;
+    margin: 30px;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* table {
+    align-self: center;
+    width: 1000px;
+  }
+  
+.container {
+      
+    display: flex;
+    justify-content: center;
+  }
+*/

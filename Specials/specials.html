@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Specials</title>
+    <link href="specials.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+       
+    <fieldset class='fset-class'>
+        <legend>Create your custom cake!</legend>
+    <table>
+
+     <tr>
+        <td>
+           <label for="cake" class='field-label'>
+              Select your cake
+           </label>
+           <div class='input-container'>
+            <select class="opt-select country-buttom">
+                <option value="">
+                   Select Cake
+                </option>
+                <option value="category2">Chocolate Cake</option>
+                <option value="category1">Red Velvet Cake</option>
+                <option value="category3">Lemon Cake</option>
+                <option value="category3">Cheesecake</option>
+                <option value="category3">Vanilla Cake</option>
+             </select>
+           </div>
+        </td>
+        <td>
+           <label for="size" class='field-label'>
+              Select size
+           </label>
+           <div class='input-container'>
+            <select class="opt-select country-buttom">
+                <option value="">
+                   Select Size
+                </option>
+                <option value="category2">Small</option>
+                <option value="category1">Medium</option>
+                <option value="category3">Large</option>
+                <option value="category3">Cupcake</option>
+
+             </select>          
+           </div>
+        </td>
+        <td colspan='2'>
+           <label for="qty" class='field-label'>
+              Quantity
+           </label>
+           <div class='input-container'>
+              <input type="number" id="qty" class="input-field" name="qty">
+           </div>
+        </td>
+     </tr>
+
+
+     <tr>
+        <td>
+           <label for="topping" class='field-label'>
+              Your favourite topping!
+           </label>
+           <div class='input-container'>
+            <select class="opt-select country-buttom">
+                <option value="">
+                   Select topping
+                </option>
+                <option value="category2">Sugar Glaze</option>
+                <option value="category3">Lemon Glaze</option>
+                <option value="category3">Cream Cheese</option>
+                <option value="category3">Vanilla Icing</option>
+                <option value="category1">Chocolate Icing</option>
+                <option value="category3">Fruit Compote</option>
+                <option value="category3">No topping</option>
+             </select>
+           </div>
+        </td>
+     </tr>
+
+
+     <tr>
+        <td>
+           <label for="topping" class='field-label'>
+              Select your garnishes!
+           </label>
+           <div class='input-container'>
+            <select class="opt-select country-buttom">
+                <option value="">
+                   Now your garnishes!
+                </option>
+                <option value="category2">Rainbow Sprinkles</option>
+                <option value="category1">Chocolate Sprinkles</option>
+                <option value="category3">Almond Flakes</option>
+                <option value="category3">Assorted Chocolates</option>
+                <option value="category3">Fresh Fruit</option>
+                <option value="category3">Milk Chocolate Flakes</option>
+                <option value="category3">White Chocolate Flakes</option>
+                <option value="category3">Oreos</option>
+                <option value="category3">No garnishes</option>
+
+             </select>
+           </div>
+        </td>
+        <td>
+            <label for="topping" class='field-label'>
+                &nbsp;
+
+            </label>
+            <div class='input-container'>
+             <select class="opt-select country-buttom">
+                 <option value="">
+                    Now your garnishes!
+                 </option>
+                 <option value="category2">Rainbow Sprinkles</option>
+                 <option value="category1">Chocolate Sprinkles</option>
+                 <option value="category3">Almond Flakes</option>
+                 <option value="category3">Assorted Chocolates</option>
+                 <option value="category3">Fresh Fruit</option>
+                 <option value="category3">Milk Chocolate Flakes</option>
+                 <option value="category3">White Chocolate Flakes</option>
+                 <option value="category3">Oreos</option>
+                 <option value="category3">No garnishes</option>
+ 
+              </select>
+            </div>
+         </td>
+     </tr>
+    
+    </table>
+    </fieldset>
+
+    <fieldset class='fset-class'>
+        <legend>Tell us about yourself!</legend>
+
+        <table id='tabel' >
+            <tr>
+               <td>
+                  <label for="fname" class='field-label'>
+                     First Name
+                  <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <input type="text" id="fname" class="input-field" name="fname" required>
+                  </div>
+               </td>
+               <td>
+                  <label for="lname" class='field-label'>
+                     Last Name
+                     <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <input type="text" id="lname" class="input-field" name="lname" required>
+                  </div>
+               </td>
+               <td colspan='2'>
+                  <label for="phno" class='field-label'>
+                     Phone Number
+                     <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <input type="text" id="phno" class="input-field" name="phno" required>
+                  </div>
+               </td>
+            </tr>
+   
+            <!-- 2 -->
+            <tr>
+               <td colspan='4'>
+                  <label for="address" class='field-label'>
+                     Delivery Address
+                     <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <input type="address" id="address" class="input-field" name="address" required>
+                  </div>
+               </td>            
+            </tr>
+   
+            <!-- 3 -->
+            <tr>
+               <td colspan='2'>
+                  <label for="email" class='field-label'>
+                     Email Address
+                  <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <input type="email" id="email" class="input-field" name="email" required >
+                  </div>
+               </td>
+               <td colspan='2'>
+                  <label for="event" class='field-label'>
+                     Type of Event
+                     <span class="field-required">*</span>
+                  </label>
+                  <div class='input-container'>
+                     <select id='event-option' name= 'event' required>
+                        <option value='1'>Corporate Function</option>
+                        <option value='2'>Galas and Parties</option>
+                     </select>                  
+                  </div>
+               </td>          
+            </tr>
+            <tr>
+                <td colspan='4'>      
+                <label for="pay" class='field-label'>
+                   <p>Payment Method
+                <span class="field-required">*</span></p>
+                </label>
+                <div class='input-container'>
+                   <input type="radio" id="cc" name="pay" value="cc">
+                   <label for="cc">Credit Card</label>
+                   <br>
+                   <input type="radio" id="inv" name="pay" value="inv">
+                   <label for="inv">Invoice</label><br>
+                </div>  
+                </td>   
+             <tr>
+    
+             <tr class='message-row'>
+                <td colspan='4'>
+                   <label for="msg" class='field-label'>
+                      Message                  
+                   </label>
+                   <div class='message-input'>
+                      <textarea cols='128' rows='10' name='msg'></textarea>
+                   </div>
+                </td>
+             </tr>
+        </table>
+    </fieldset>
+
+
+
+
+    </div> <!-- container -->    
+</body>
+</html>
