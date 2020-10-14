@@ -37,7 +37,7 @@ h1 {
 
 }
  
-  #submitButton {
+#submitButton {
     text-transform: uppercase;
     padding: 10px 20px;
     background-color: #9B7A69;
@@ -45,25 +45,34 @@ h1 {
     color: white;
   }
 
-  #submitButton:hover {
+#submitButton:hover {
     background-color: #012639;
     cursor: pointer;
-    ;
+    align-items: center;
   }
 
-  ul {
+
+ul {
     list-style: none;
 }
 
 .field-required {
     color: #ffffff;
 }
-  #tabel {
+  
+#tabel {
     align-self: center;
     width: 1000px;
   }
-  .container {
+  
+.container {
       
     display: flex;
     justify-content: center;
   }
+
+#event-option {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+}
