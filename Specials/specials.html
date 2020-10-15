@@ -6,18 +6,31 @@
 </head>
 <body>
     <div class="container">
-       
+     
+      <div id='list'>
+         <ul>
+             <li class='logo-class'><a href="index.html">The Bean Cafe</a></li>
+             <li><a href="default.asp">About Us</a></li>
+             <li><a href="default.asp">Catering</a></li>
+             <li><a href="news.asp">Specials</a></li>
+             <li><a href="contact.asp">Delivery</a></li>
+             <li><a href="about.asp">Menu</a></li>
+           </ul>
+         </div>
+         
+         <h1>Create your own!</h1><br>
+     
     <fieldset class='fset-class'>
         <legend>Create your custom cake!</legend>
-    <table>
+    <table id='table-first'>
 
      <tr>
-        <td>
+        <td colspan='2'>
            <label for="cake" class='field-label'>
               Select your cake
            </label>
            <div class='input-container'>
-            <select class="opt-select country-buttom">
+            <select class="selection-container">
                 <option value="">
                    Select Cake
                 </option>
@@ -34,7 +47,7 @@
               Select size
            </label>
            <div class='input-container'>
-            <select class="opt-select country-buttom">
+            <select class="selection-container">
                 <option value="">
                    Select Size
                 </option>
@@ -46,7 +59,7 @@
              </select>          
            </div>
         </td>
-        <td colspan='2'>
+        <td>
            <label for="qty" class='field-label'>
               Quantity
            </label>
@@ -58,12 +71,12 @@
 
 
      <tr>
-        <td>
+        <td colspan='4'>
            <label for="topping" class='field-label'>
               Your favourite topping!
            </label>
            <div class='input-container'>
-            <select class="opt-select country-buttom">
+            <select class="selection-container">
                 <option value="">
                    Select topping
                 </option>
@@ -81,14 +94,14 @@
 
 
      <tr>
-        <td>
+        <td colspan=''>
            <label for="topping" class='field-label'>
               Select your garnishes!
            </label>
            <div class='input-container'>
-            <select class="opt-select country-buttom">
+            <select class="selection-container">
                 <option value="">
-                   Now your garnishes!
+                   Now your garnish!
                 </option>
                 <option value="category2">Rainbow Sprinkles</option>
                 <option value="category1">Chocolate Sprinkles</option>
@@ -103,15 +116,14 @@
              </select>
            </div>
         </td>
-        <td>
+        <td colspan=''>
             <label for="topping" class='field-label'>
                 &nbsp;
-
             </label>
             <div class='input-container'>
-             <select class="opt-select country-buttom">
+             <select class="selection-container">
                  <option value="">
-                    Now your garnishes!
+                    Another one?
                  </option>
                  <option value="category2">Rainbow Sprinkles</option>
                  <option value="category1">Chocolate Sprinkles</option>
@@ -134,7 +146,8 @@
     <fieldset class='fset-class'>
         <legend>Tell us about yourself!</legend>
 
-        <table id='tabel' >
+        <table id='table-second' >
+         
             <tr>
                <td>
                   <label for="fname" class='field-label'>
@@ -191,14 +204,11 @@
                </td>
                <td colspan='2'>
                   <label for="event" class='field-label'>
-                     Type of Event
+                     Delivery Time
                      <span class="field-required">*</span>
                   </label>
                   <div class='input-container'>
-                     <select id='event-option' name= 'event' required>
-                        <option value='1'>Corporate Function</option>
-                        <option value='2'>Galas and Parties</option>
-                     </select>                  
+                     <input type="time" id="email" class="input-field" name="email" required >             
                   </div>
                </td>          
             </tr>
@@ -230,6 +240,9 @@
              </tr>
         </table>
     </fieldset>
+    <center>
+    <button id='submitButton' type="submit" onclick="ValidateEmail(document.mainform.email)">Submit</button>
+   </center>
 
 
 

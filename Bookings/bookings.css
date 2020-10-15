@@ -1,5 +1,7 @@
            
 *{
+  margin: 0;
+  padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -11,6 +13,7 @@ body {
 h1 {
     font-weight: lighter;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   a {
@@ -89,3 +92,41 @@ ul {
   height: 45px;
   padding: 10px;
 }
+
+li {
+  float: right;
+}
+
+.logo-class {
+  float: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  color: #012639 ;
+  font-size: large;
+}
+
+li a {
+  display: block;
+  color:#012639 ;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #E6BE8A;
+}
+
+ul {
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #9B7A69;
+}
+
+#list {
+  margin-bottom: 30px;
+  
+  }
