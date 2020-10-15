@@ -1,0 +1,46 @@
+<div class="choice" id="repeat">
+	<select id="type"><option>----</option></select>
+	<select id="item"><option>----</option></select>
+</div>
+<button id="addmore" onclick="add()">Add More</button>
+
+<script language="javascript" type="text/javascript">  
+
+var itemlist={
+	hotbeverage : ['-----','cappucino' , 'cafelatte' , 'americano' , 'mocha' , 'hotchocolate' , 'expresso' , 'macchiato' , 'hazelnutcappucino' , 'tiramisucappucino' , 'tea' , 'gingertea'],
+	coldbeverage : ['-----','icedcaffelatte', 'icedmocha', 'icedfrappe', 'icedtea', 'icedmilktea'],
+	sandwich : ['-----','caesarsalad', 'blt', 'breakfast1', 'cheesytoast', 'lettucepitapockets', 'asianstyletofu', 'pestoveggie', 'crispyeggplant', 'smokedveggiepanini'],
+	wrap : ['-----','mediterranean', 'thaistyle', 'breakfast2', 'paneer', 'cheesyspinach'],
+	minibite : ['-----','croissant', 'bagelwcreamcheese', 'quesadilla', 'vegetablepastrypuff', 'bakedpitachips', 'cheesygarlicbread'],
+	dessert : ['-----','minichocolavacake', 'miniapplepie', 'baklava', 'hotfudgebrownie', 'caramelbrownie', 'icecreambrownie', 'classiccheesecake', 'triplechococheesecake', 'blueberrycheesecake', 'lemoncheesecake', 'oatmealraisincookie', 'chocochipcookie', 'sugarcookie']
+};
+
+
+var ftype=document.getElementById("type");
+var fitem=document.getElementById("item");
+
+for(typ in itemlist)
+{
+	ftype.innerHTML=ftype.innerHTML + '<option>' + typ + '</option>';
+}
+
+ftype.addEventListener('change', function options(e){
+	fitem.innerHTML='';
+	typ=e.target.value;
+	if(typ in itemlist)
+	{
+		for(i=0;i<itemlist[typ].length;i++)
+		{
+			fitem.innerHTML=fitem.innerHTML + '<option>' + itemlist[typ][i] + '</option>';
+		}
+	}
+});
+
+var i=0;
+var itm=document.getElementById("repeat");
+function add(){
+	var clonediv=itm.cloneNode(true);
+	clonediv.id="repeat" + ++i;
+	itm.parentNode.appendChild(clonediv);
+}
+</script>
