@@ -1,0 +1,18 @@
+body{
+	background-color:#B5A676;
+	font-family:"Microsoft Himalaya","Javanese Text";
+	font-size:24px;
+}
+.div1{
+	border:solid black 1px;
+	float:left;
+	width:80%;
+	border-radius:15px;
+	padding-right:10px;
+	background-color:rgb(255,255,245);
+}
+.title{
+	font-family:"Microsoft Yi Baiti",SimSun,"Bahnschrift Light";
+	font-size:45px;
+	text-align:center;
+}

@@ -1,0 +1,244 @@
+<div class="choice" id="repeat">
+	<select id="type"><option>----</option></select>
+	<select id="item"><option>----</option></select>
+</div>
+<button id="addmore" onclick="add()">Add More</button>
+
+<script language="javascript" type="text/javascript">  
+
+var itemlist={
+	hotbeverage : ['-----','cappucino' , 'cafelatte' , 'americano' , 'mocha' , 'hotchocolate' , 'expresso' , 'macchiato' , 'hazelnutcappucino' , 'tiramisucappucino' , 'tea' , 'gingertea'],
+	coldbeverage : ['-----','icedcaffelatte', 'icedmocha', 'icedfrappe', 'icedtea', 'icedmilktea'],
+	sandwich : ['-----','caesarsalad', 'blt', 'breakfast1', 'cheesytoast', 'lettucepitapockets', 'asianstyletofu', 'pestoveggie', 'crispyeggplant', 'smokedveggiepanini'],
+	wrap : ['-----','mediterranean', 'thaistyle', 'breakfast2', 'paneer', 'cheesyspinach'],
+	minibite : ['-----','croissant', 'bagelwcreamcheese', 'quesadilla', 'vegetablepastrypuff', 'bakedpitachips', 'cheesygarlicbread'],
+	dessert : ['-----','minichocolavacake', 'miniapplepie', 'baklava', 'hotfudgebrownie', 'caramelbrownie', 'icecreambrownie', 'classiccheesecake', 'triplechococheesecake', 'blueberrycheesecake', 'lemoncheesecake', 'oatmealraisincookie', 'chocochipcookie', 'sugarcookie']
+};
+
+
+var ftype=document.getElementById("type");
+var fitem=document.getElementById("item");
+
+for(typ in itemlist)
+{
+	ftype.innerHTML=ftype.innerHTML + '<option>' + typ + '</option>';
+}
+
+ftype.addEventListener('change', function options(e){
+	fitem.innerHTML='';
+	typ=e.target.value;
+	if(typ in itemlist)
+	{
+		for(i=0;i<itemlist[typ].length;i++)
+		{
+			fitem.innerHTML=fitem.innerHTML + '<option>' + itemlist[typ][i] + '</option>';
+		}
+	}
+});
+
+var i=0;
+var itm=document.getElementById("repeat");
+function add(){
+	var clonediv=itm.cloneNode(true);
+	clonediv.id="repeat" + ++i;
+	itm.parentNode.appendChild(clonediv);
+}
+
+
+
+</script>
+
+//var para=document.getElementById('iprice');
+		//var node=document.createTextNode(p.toString());
+		//para.appendChild(node);
+
+
+----------------------------------------------------------------------------
+ROUGH
+<!--
+function checkType(that){
+alert("change");
+	var items=document.getElementsByClassName("item");
+
+
+var elements = document.getElementsByClassName("testClass1");
+// Iterate through each element that was found
+for(var e = 0; e < elements.length; e++){
+     // Get the inner content via the innerHTML property
+     var content = elements[e].innerHTML;
+
+	if(that.value=="hotbeverage")
+	{
+		document.getElementById("hbev").style.display="block";
+		document.getElementsByClassName("item").style.display="block";
+	
+	}
+	if(that.value=="coldbeverage")
+	{
+		document.getElementById("cbev").style.display="block";
+		document.getElementsByClassName("item").style.display="block";
+
+	}
+	if(that.value=="sandwich")
+	{
+		document.getElementById("sand").style.display="block";
+		
+	}
+	if(that.value=="wrap")
+	{
+		document.getElementById("wrap").style.display="block";
+		
+	}
+	if(that.value=="minibite")
+	{
+		document.getElementById("mini").style.display="block";
+		
+	}
+	if(that.value=="dessert")
+	{
+		document.getElementById("dess").style.display="block";
+	}
+}
+
+-->
+
+
+
+
+
+</head>
+<body bgcolor="#78C7C7">
+<h3><center>Please provide your contact details, address, and order details.</center></h3> 
+<h3><center>We will get back to you within an hour via phone call.</center></h3>
+<h3><center>As of now, we only accept cash on delivery.</center></h3>
+<form name="order form">
+<fieldset bgcolor="lightpink">
+<!--
+<legend>Contact Details</legend>
+<table>
+<tr>
+<td>Name:</td>
+<td colspan="3"><input type="test" name="name" values="Your Full Name" size="50"></td>
+</tr>
+<tr>
+<td>Phone:</td>
+<td><input type="text" name="phone" size="10" maxlength="10"></td>
+</tr>
+<tr>
+<td>Address Line 1:</td>
+<td colspan="3"><input type="text" name="address1" size="50"></td>
+</tr>
+<tr>
+<td>Address Line 2:</td>
+<td colspan="3"><input type="text" name="address2" size="50"></td>
+</tr>
+<tr>
+<td>ZIP:</td>
+<td><input type="text" name="zip" size="10"></td>
+<td>City:</td>
+<td><input type="text" name="city" size="30"></td>
+</tr>
+<tr>
+<td>Country:</td>
+<td><select name="country">
+	<option values="India">India</option></td>
+</tr>
+</table>
+</fieldset>
+<br/>
+-->
+
+
+
+
+
+<!--
+<select id="type" name="type" onchange="checkType(this);">
+	<option value="hotbeverage">Hot Beverage</option>
+	<option value="coldbeverage">Cold Beverage</option>
+	<option value="sandwich">Sandwich</option>
+	<option value="wrap">Wrap</option>
+	<option value="minibite">Mini Bite</option>
+	<option value="dessert">Dessert</option>
+</select>
+
+<div class="item" id="hbev" style="display:none;">
+<select name="h">
+	<option value="cappucino">Cappucino</option>
+	<option value="cafelatte">Cafe Latte</option>
+	<option value="americano">Americano</option>
+	<option value="mocha">Mocha</option>
+	<option value="hotchocolate">Hot Chocolate</option>
+	<option value="expresso">Expresso</option>
+	<option value="macchiato">Macchiato</option>
+	<option value="hazelnutcappucino">Hazelnut Cappucino</option>
+	<option value="tiramisucappucino">Tiramisu Cappucino</option>
+	<option value="tea">Tea</option>
+	<option value="gingertea">Ginger Tea</option>
+</select>
+</div>
+
+<div class="item" id="cbev" style="display:none;">
+<select name="c">
+	<option value="icedcaffelatte">Iced Cafe Latte</option>
+	<option value="icedmocha">Iced Mocha</option>
+	<option value="icedfrappe">Iced Frappe</option>
+	<option value="icedtea">Iced Tea</option>
+	<option value="icedmilktea">Iced Milk Tea</option>
+</select>
+</div>
+
+<div class="item" id="sand" style="display:none;">
+<select name="s">
+	<option value="caesarsalad">Caesar Salad</option>
+	<option value="blt">BLT</option>
+	<option value="breakfast1">Breakfast</option>
+	<option value="cheesytoast">Cheesy Toast</option>
+	<option value="lettucepitapockets">Lettuce Pita Pockets</option>
+	<option value="asianstyletofu">Asian Style Tofu</option>
+	<option value="pestoveggie">Pesto Veggie</option>
+	<option value="crispyeggplant">Crispy Eggplant</option>
+	<option value="smokedveggiepanini">Smoked Veggie Panini</option>
+</select>
+</div>
+
+<div class="item" id="wrap" style="display:none;">
+<select name="w">
+	<option value="mediterranean">Mediterranean</option>
+	<option value="thaistyle">Thai Style</option>
+	<option value="breakfast2">Breakfast</option>
+	<option value="paneer">Paneer</option>
+	<option value="cheesyspinach">Cheesy Spinach</option>
+</select>
+</div>
+
+<div class="item" id="mini" style="display:none;">
+<select name="m">
+	<option value="croissant">Croissant</option>
+	<option value="bagelwcreamcheese">Bagel with Cream Cheese</option>
+	<option value="quesadilla">Quesadilla</option>
+	<option value="vegetablepastrypuff">Vegetable Pastry Puff</option>
+	<option value="bakedpitachips">Baked Pita Chips</option>
+	<option value="cheesygarlicbread">Cheesy Garlic Bread</option>
+</select>
+</div>
+
+<div class="item" id="dess" style="display:none;">
+<select name="d">
+	<option value="minichocolavacake">Mini Chocolate Lava Cake</option>
+	<option value="miniapplepie">Mini Apple Pie</option>
+	<option value="baklava">Baklava</option>
+	<option value="hotfudgebrownie">Hot Fudge Brownie</option>
+	<option value="caramelbrownie">Caramel Topped Brownie</option>
+	<option value="icecreambrownie">Brownie with Ice Cream</option>
+	<option value="classiccheesecake">Classic New York Cheesecake</option>
+	<option value="triplechococheesecake">Triple Chocolate Cheesecake</option>
+	<option value="blueberrycheesecake">Blueberry Cheesecake</option>
+	<option value="lemoncheesecake">Lemon Cheesecake</option>
+	<option value="oatmealraisincookie">Oatmeal Raisin Cookie</option>
+	<option value="chocochipcookie">Chocolate Chip Cookie</option>
+	<option value="sugarcookie">Sugar Cookie</option>
+</select>
+</div>
+
+-->
