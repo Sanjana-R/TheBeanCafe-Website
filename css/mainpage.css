@@ -1,0 +1,403 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+*:after, *:before{
+	box-sizing: border-box;
+}	
+body{
+	width: 100%;
+	height: 100%;
+	background-color:  #9B7A69;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.content{
+	position: absolute;
+	top: 26%;
+	left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+	height: 300px;
+	width: 500px;
+	color: white;
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 1px;
+}
+.header-content p span{
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 42px;
+}
+
+.header-content-bottom p{
+	color: #000000;
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+
+
+
+/*..............................................................................................*/
+/*........................This is for main login and signup button...................................*/
+/*..............................................................................................*/
+/*..............................................................................................*/
+
+button{
+	height: 48px;
+	width: 150px;
+	margin-left: 20px;
+	border: 1.5px solid #000000;
+	background-color: transparent;
+	border-radius: 10px;
+	color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	outline: none;
+	cursor: pointer;
+}
+button:hover{
+	background-color: burlywood;
+	color: black;
+	
+}
+.buttons{
+	position: relative;
+	transform: translate(120px,460px);
+	/* background-color: red; */
+}
+
+/*....................................................................................................*/
+/*....................................................................................................*/
+/*.............This is for the login page which will pop up...........................................*/
+/*....................................................................................................*/
+/*....................................................................................................*/
+
+.login-section{
+	position: absolute;
+    background-color: #012639;
+	background-size: 100%;
+	height: 550px;
+	width: 500px;
+	border-radius: 8px;
+	transform: translate(155%,0%);
+	z-index: 1000;
+	visibility: hidden;
+}
+.login-section input[type="email"],input[type="password"],input[type="submit"]{
+	position: relative;
+	top: 160px;
+	left: 80px;
+	height: 55px;
+	width: 69%;
+	color: white;
+	font-size: 15px;
+	background-color: transparent;
+	border-radius: 40px;
+	outline: none;
+	border: 2px solid #bdc3c7;
+	margin-bottom: -2px;
+}
+.login-section input[type="email"]{
+	padding-left: 50px;
+	padding-right: 50px;
+	border: 0ch;
+}
+.login-section input[type="password"]{
+	border: 0ch;
+	padding-left: 70px;
+	padding-right: 50px;
+	position: relative;
+	left: 55px;
+}
+.login-section input[type="submit"]{
+	background-color: #9B7A69;
+	cursor: pointer;
+	color: black;
+	letter-spacing:1px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.login-section input::placeholder{
+	color: #bdc3c7;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.fa-envelope-o{
+	font-size: 18px;
+	position: relative;
+	top: 160px;
+	right: -30px;
+}
+.fa-unlock-alt{
+	font-size: 18px;
+	position: relative;
+	top: 163px;
+	right: 260px;
+}
+.forget-btn{
+	position: relative;
+	border: 0ch;
+	top: 240px;
+	left: 180px;
+	padding-top: 6.8px;
+	letter-spacing: 1px;
+	text-align: center;
+	height: 40px;
+	width: 30%;
+	color: #bdc3c7;
+	outline: none;
+	border: 1.9px solid #bdc3c7;
+	cursor: pointer;
+}
+.forget-btn:hover{
+	background-color:#bdc3c7;
+	color: black;
+	
+}
+.remember-me{
+	position: relative;
+	top: 190px;
+	left: 205px;
+	color: white;
+	letter-spacing: 1px;
+}
+.remember-me input[type="checkbox"]{
+	color: transparent;
+}
+.close-btn{
+	position: relative;
+	left: 96%;
+	top: -6px;
+	background-color: rgb(21,22,20);
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	font-size: 25px;
+	color: grey;
+	border-radius: 50%;
+}
+.close-btn:hover{
+	background-color: white;
+	color: red;
+}
+.bottom-ctn{
+	position: relative;
+	top: 270px;
+	left: 100px;
+	height: 70px;
+	width: 280px;
+	border-radius: 10px;
+	background-color: rgb(21,22,20);
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.6);
+}
+.login-section ul{
+	padding-top: 14px;
+	text-align: center;
+	list-style-type: none;
+}
+.login-section li{
+	display: inline-block;
+	color: white;
+	font-size: 19px;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	margin-left: 13px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	cursor: pointer;
+}
+.login-text{
+	position: absolute;
+	top: 60px;
+	left: 100px;
+	color: white;
+}
+
+.login-text p:nth-child(1){
+	font-size: 28px;
+	font-family: 'Montserrat';
+}
+.login-text p:nth-child(2){
+	font-size: 19px;
+	padding-left: 30px;
+	padding-top: 5px;
+	letter-spacing: 1px;
+	font-family: 'Marck Script';
+}
+.animate{
+	-webkit-animation: animatezoom 0.9s;
+	animation: animatezoom 0.9s;
+}
+@-webkit-keyframes animatezoom{
+	from{
+	-webkit-transform: scale(0);
+	}to{
+		-webkit-transform: scale(1);
+	}
+}
+@keyframes animatezoom{
+	from{
+		transform: scale(0);
+	}to{
+		transform: scale(1);
+	}
+}
+
+
+
+/*....................................................................................................*/
+/*....................................................................................................*/
+/*.............This is for the sign page which will pop up...........................................*/
+/*....................................................................................................*/
+/*....................................................................................................*/
+
+
+.signup-section{
+	position: absolute;
+	top: 0px;
+    background-color: #012639;
+	background-size: 100%;
+	height: 550px;
+	width: 500px;
+	border-radius: 8px;
+	transform: translate(767px,9.0%);
+	/* z-index: -1000; */
+	visibility: hidden;
+}
+.signup-section input[type="email"],input[type="password"],input[type="submit"]{
+	position: relative;
+	top: 160px;
+	left: 80px;
+	height: 55px;
+	width: 69%;
+	color: white;
+	font-size: 15px;
+	font-family:"Montserrat";
+	background-color: transparent;
+	border-radius: 40px;
+	outline: none;
+	border: 2px solid #bdc3c7;
+	margin-bottom: -2px;
+}
+.signup-section input[type="email"]{
+	padding-left: 50px;
+	padding-right: 50px;
+	border: 0ch;
+}
+.signup-section input[type="submit"]{
+	border-right: none;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background-color: #9B7A69;
+	position: relative;
+	left: 55px;
+	cursor: pointer;
+	color: black;
+	letter-spacing:1px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.signup-section input::placeholder{
+	color: #bdc3c7;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.signup-section .fa-envelope-o{
+	font-size: 18px;
+	position: relative;
+	top: 160px;
+	right: -30px;
+}
+
+#fa-unlock{
+	font-size: 18px;
+	position: relative;
+	top: 165px;
+	right: -30px;
+}
+.signup-section .fa-unlock-alt{
+	font-size: 18px;
+	position: relative;
+	top: 163px;
+	right: 260px;
+}
+
+
+.signup-section .close-btn{
+	position: relative;
+	left: 96%;
+	top: -6px;
+	background-color: rgb(21,22,20);
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	font-size: 25px;
+	color: grey;
+	border-radius: 50%;
+}
+.signup-section .close-btn:hover{
+	background-color: white;
+	color: red;
+}
+.signup-section .bottom-ctn{
+	position: relative;
+	top: 270px;
+	left: 100px;
+	height: 70px;
+	width: 280px;
+	border-radius: 10px;
+	background-color: rgb(21,22,20);
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.6);
+}
+.signup-section ul{
+	padding-top: 14px;
+	text-align: center;
+	list-style-type: none;
+}
+.signup-section li{
+	display: inline-block;
+	color: white;
+	font-size: 19px;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	margin-left: 13px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	cursor: pointer;
+}
+.signup-text{
+	position: absolute;
+	top: 60px;
+	left: 70px;
+	color: white;
+}
+
+.signup-text p:nth-child(1){
+	font-size: 28px;
+	font-family: 'Montserrat';
+}
+.signup-text p:nth-child(2){
+	font-size: 19px;
+	padding-left: 60px;
+	padding-top: 5px;
+	letter-spacing: 1px;
+	font-family: 'Marck Script';
+}
