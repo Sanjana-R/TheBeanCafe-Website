@@ -97,6 +97,7 @@ is possible to satisfy.
 3. They will contact the requesting customer as needed.
 
 **Log In and Sign Up Pages**
+
 A user can create an account if the account does not already exist.
 If an account does exist with the information provided, in the database, the user is not
 allowed to create a new account. They must go to the login page.
